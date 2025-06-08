@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>USCG - Sistema interno Hierarquia</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 40px;
+      max-width: 950px;
+      width: 95%;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 28px;
+      color: #ffffff;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.15);
+      color: #00ffe5;
+      padding: 14px;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    td {
+      padding: 12px;
+      background-color: rgba(255, 255, 255, 0.07);
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    tr:nth-child(even) td {
+      background-color: rgba(255, 255, 255, 0.04);
+    }
+
+    tr:hover td {
+      background-color: rgba(0, 255, 229, 0.1);
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        text-align: left;
+        background: none;
+        color: #00ffe5;
+      }
+
+      td {
+        text-align: left;
+        padding-left: 50%;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        font-weight: bold;
+        color: #00ffe5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://icon2.cleanpng.com/20180523/ssh/kisspng-united-states-coast-guard-united-states-department-day-of-the-national-guard-of-ukraine-5b0522e24034d7.625776701527063266263.jpg" alt="lg">
+    </div>
+    <h1>USCG - Sistema interno Hierarquia</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>USCG</th>
+          <th>Equivalente Funcional</th>
+          <th>Salário (US$)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td data-label="USCG">Ensign</td><td data-label="Funcional">Recruta</td><td data-label="Salário">700</td></tr>
+        <tr><td data-label="USCG">Ensign I</td><td data-label="Funcional">Soldado</td><td data-label="Salário">850</td></tr>
+        <tr><td data-label="USCG">Ensign II</td><td data-label="Funcional">Cabo</td><td data-label="Salário">900</td></tr>
+        <tr><td data-label="USCG">Ensign III</td><td data-label="Funcional">3º Sargento</td><td data-label="Salário">950</td></tr>
+        <tr><td data-label="USCG">Ensign IV</td><td data-label="Funcional">2º Sargento</td><td data-label="Salário">1000</td></tr>
+        <tr><td data-label="USCG">Ensign V</td><td data-label="Funcional">1º Sargento</td><td data-label="Salário">1100</td></tr>
+        <tr><td data-label="USCG">Lieutenant Junior Grade</td><td data-label="Funcional">Subtenente</td><td data-label="Salário">1175</td></tr>
+        <tr><td data-label="USCG">Lieutenant</td><td data-label="Funcional">Aspirante-a-Oficial</td><td data-label="Salário">1200</td></tr>
+        <tr><td data-label="USCG">Lieutenant Commander</td><td data-label="Funcional">2º Tenente</td><td data-label="Salário">1250</td></tr>
+        <tr><td data-label="USCG">Commander</td><td data-label="Funcional">1º Tenente</td><td data-label="Salário">1300</td></tr>
+        <tr><td data-label="USCG">Captain</td><td data-label="Funcional">Capitão</td><td data-label="Salário">1400</td></tr>
+        <tr><td data-label="USCG">Rear Admiral Lower Half</td><td data-label="Funcional">Major</td><td data-label="Salário">1450</td></tr>
+        <tr><td data-label="USCG">Rear Admiral</td><td data-label="Funcional">Tenente-Coronel</td><td data-label="Salário">1500</td></tr>
+        <tr><td data-label="USCG">Vice Admiral</td><td data-label="Funcional">Coronel</td><td data-label="Salário">1550</td></tr>
+        <tr><td data-label="USCG">Admiral</td><td data-label="Funcional">General / Comandante</td><td data-label="Salário">1600</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
